@@ -1,0 +1,56 @@
+.flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-c {
+    justify-content: center;
+}
+
+.tran-2 {
+    transition: .2s ease-in-out;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mh-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.font-16 {
+    font-size: 1rem;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.btn {
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.no-dec {
+    text-decoration: none;
+    list-style: none;
+    font-style: none;
+}
