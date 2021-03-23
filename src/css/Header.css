@@ -23,7 +23,6 @@ header nav {
     font-weight: 700;
     height: 100%;
     width: 42rem;
-    color: #efefef;
 }
 
 header ul li a{
@@ -54,7 +53,7 @@ header .btn {
     font-size: 1.5rem;
 }
 
-header .btn:hover, .menu-right h4:hover, .avatar:hover {
+header .btn:hover, .menu-right h4:hover, .avatar:hover, .dropdown-profile:hover {
     transform: scale(1.05);
 }
 
@@ -77,6 +76,7 @@ header .btn:hover, .menu-right h4:hover, .avatar:hover {
 
 .avatar-cont {
     height: 100%;
+    color: white;
 }
 
 .avatar{

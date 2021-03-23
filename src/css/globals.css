@@ -13,6 +13,10 @@
     transition: .2s ease-in-out;
 }
 
+.txt-c {
+    text-align: center;
+}
+
 .ai-c {
     align-items: center;
 }

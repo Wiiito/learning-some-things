@@ -3,44 +3,19 @@ import logo from '../img/logo.svg';
 import avatar from '../img/avatar.svg';
 import '../css/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faSearch, faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 
-var notifications = [
-    {
-        "name":"WOW",
-        "desc":"desc",
-        "img":"src"
-    },
-    {
-        "name":"WOW",
-        "desc":"desc",
-        "img":"src"
-    },
-    {
-        "name":"WOW",
-        "desc":"desc",
-        "img":"src"
-    },
-    {
-        "name":"WOW",
-        "desc":"desc",
-        "img":"src"
-    },
-    {
-        "name":"WOW",
-        "desc":"desc",
-        "img":"src"
-    },
-];
+var notifications = [];
 var notificationsNumber = notifications.length;
 
 const Header = () => {
     return (
+        <>
         <header className='flex jc-sb'>
             <nav className='flex jc-sb'>
                 <div className='logo-div'>
-                    <a href="/"><img src={logo} className='tran-2'/></a>
+                    <a href="/"><img src={logo} alt='logo' className='tran-2'/></a>
                 </div>
                 <ul className='links-ul no-dec flex ai-c'>
                     <li className='pd-10'><a href='/' className='no-dec tran-2'>Home</a></li>
@@ -59,13 +34,15 @@ const Header = () => {
                     <FontAwesomeIcon icon={faBell} />
                     {note()}
                 </button>
-                <div className='avatar-cont mh-10'>
-                    <div className='point avatar tran-2'>
-                        <img src={avatar} />
+                <div className='avatar-cont ml-10 ai-c flex'>
+                    <div className='avatar ml-10 tran-2 point'>
+                        <img src={avatar} alt='avatar'/>
                     </div>
+                    <FontAwesomeIcon icon={faSortDown} className='point dropdown-profile mh-10 tran-2'/>
                 </div>
             </div>
         </header>
+        </>
     )
 }
 
