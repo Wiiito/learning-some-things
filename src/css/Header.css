@@ -1,5 +1,5 @@
 header {
-    width: calc(100% - 4rem * 2);
+    width: calc(100% - 50px * 2);
     height: calc(7.5rem - 2.5rem * 2);
     position: relative;
     padding: 2rem 4rem;

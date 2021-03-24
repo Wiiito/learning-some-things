@@ -12,7 +12,7 @@ var notificationsNumber = notifications.length;
 const Header = () => {
     return (
         <>
-        <header className='flex jc-sb'>
+        <header className='flex jc-sb pd-50'>
             <nav className='flex jc-sb'>
                 <div className='logo-div'>
                     <a href="/"><img src={logo} alt='logo' className='tran-2'/></a>

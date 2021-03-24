@@ -13,6 +13,10 @@
     transition: .2s ease-in-out;
 }
 
+.tran-8 {
+    transition: .8s ease-in-out;
+}
+
 .txt-c {
     text-align: center;
 }
@@ -23,6 +27,11 @@
 
 .pd-10 {
     padding: 10px;
+}
+
+.pd-50 {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .mr-10 {
