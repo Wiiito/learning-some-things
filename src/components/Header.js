@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/logo.svg';
 import avatar from '../img/avatar.svg';
-import '../css/Header.css';
+import '../scss/Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faSearch, faSortDown } from '@fortawesome/free-solid-svg-icons'
 

@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPlus } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios'
 import React, { Component } from 'react'
-import '../css/MostWatched.css'
-import '../css/movies-Globals.css'
+import '../scss/MostWatched.scss'
+import '../scss/movies-Globals.scss'
 import { imgUrl, cats, makeUrl } from '../config'
 
 export default class MostWatched extends Component {
