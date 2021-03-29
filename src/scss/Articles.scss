@@ -1,9 +1,28 @@
+@import 'Mixins';
+
 section {
     top: -6rem;
     position: relative;
     z-index: 10;
     color: white;
     background: linear-gradient(transparent 95px, black 96px, transparent 50%);
+
+    article {
+        padding: 0 50px;
+
+        @include breakpoint-down(small) {
+            padding: 0;
+
+            h1 {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @include breakpoint-down(small) {
+        top: 0;
+        background: linear-gradient(black 0px, transparent 50%);
+    }
 
     h1 {
         font-size: 1.5rem;
@@ -24,6 +43,12 @@ section {
         margin-top: 15px;
         display: flex;
         overflow: hidden;
+
+        @include breakpoint-down(medium) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
         width: 100%;
         margin-bottom: 40px;
     

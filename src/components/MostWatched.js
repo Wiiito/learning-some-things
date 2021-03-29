@@ -41,6 +41,10 @@ export default class MostWatched extends Component {
         return (
             <>
             <div className='mostWatched'>
+                <div className="img-background">
+                    <img src={ imgUrl + 'original' + this.state.background } alt="Background"/>
+                    <div className='shadow'></div>
+                </div>
                 <div className="text pd-10 pd-50">
                     <h1>{this.state.title}</h1>
                     <div className='desc flex ai-c'>
@@ -49,15 +53,11 @@ export default class MostWatched extends Component {
                         <h5 className='mh-10 info'>HD</h5>
                         <h5 className='ml-10 info'>5.1</h5>
                     </div>
-                    <p className='desc-info'>{this.state.overview}</p>
+                    <p className='desc-info hide-for-mobile'>{this.state.overview}</p>
                     <div className="buttons">
                         <button className='btn desc-btn mr-10 play tran-2'><FontAwesomeIcon icon={faPlay} className='mr-10'/>Play</button>
                         <button className='btn desc-btn my-list tran-2'><FontAwesomeIcon icon={faPlus} className='mr-10'/>My list</button>
                     </div>
-                </div>
-                <div className="img-background">
-                    <img src={ imgUrl + 'original' + this.state.background } alt="Background"/>
-                    <div className='shadow'></div>
                 </div>
             </div>
             </>

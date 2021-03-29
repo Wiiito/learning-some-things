@@ -17,15 +17,15 @@ const Header = () => {
                 <div className='logo-div'>
                     <a href="/"><img src={logo} alt='logo' className='tran-2'/></a>
                 </div>
-                <ul className='links-ul no-dec flex ai-c'>
+                <ul className='links-ul no-dec flex ai-c hide-for-mobile'>
                     <li className='pd-10'><a href='/' className='no-dec tran-2'>Home</a></li>
-                    <li className='pd-10'><a href='/' className='no-dec tran-2'>TV Shows</a></li>
-                    <li className='pd-10'><a href='/' className='no-dec tran-2'>Movies</a></li>
-                    <li className='pd-10'><a href='/' className='no-dec tran-2'>Recently Added</a></li>
-                    <li className='pd-10'><a href='/' className='no-dec tran-2'>My List</a></li>
+                    <li className='pd-10'><a href='/tv' className='no-dec tran-2'>TV Shows</a></li>
+                    <li className='pd-10'><a href='/movie' className='no-dec tran-2'>Movies</a></li>
+                    <li className='pd-10'><a href='/recently' className='no-dec tran-2'>Recently Added</a></li>
+                    <li className='pd-10'><a href='/list' className='no-dec tran-2'>My List</a></li>
                 </ul>
             </nav>
-            <div className='menu-right flex ai-c'>
+            <div className='menu-right flex ai-c hide-for-tablet'>
                 <button className='search-btn btn mh-10 tran-2'>
                     <FontAwesomeIcon icon={faSearch}/>
                 </button>
